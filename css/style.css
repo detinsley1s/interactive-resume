@@ -61,7 +61,6 @@ h5 {
 
 }
 
-
 .date-text {
   font-style: italic;
   font-size: 14px;
@@ -76,7 +75,6 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -175,6 +173,18 @@ span {
   text-align: center;
 }
 
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
@@ -201,21 +211,29 @@ span {
   }
 }
 
-#map {
-  display: block;
-  height: 100%;
-  margin: 0 5%;
+
+/* Added or edited by me */
+
+@media only screen and (max-width: 484px) {  
+  #name {
+    display: block;
+  }
 }
 
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
+@media only screen and (max-width: 366px) {
+  #footerContacts {
+    flex-direction: column;
+  }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 350px) {
   #skills-h3,
   .biopic {
     display: block;
   }
+}
+
+.education-entry {
+  border-bottom: 1px dotted lightgray;
+  padding-bottom: 10px;
 }
